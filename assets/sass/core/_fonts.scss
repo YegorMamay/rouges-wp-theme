@@ -1,9 +1,11 @@
-//@import url('https://fonts.googleapis.com/css?family=Comfortaa|Lobster&subset=cyrillic');
+//@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro:400,700&display=swap&subset=cyrillic,cyrillic-ext');
 
-//font-family: 'Roboto', sans-serif;
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Source Sans Pro', sans-serif;
+
 $font-family-sans-serif: 'Arial', 'Helvetica', sans-serif;
 $font-family-serif: 'Georgia', 'Times New Roman', 'Times', serif;
 $font-family-monospace: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 
-$fontFamilyOne: $font-family-sans-serif; // titles
-$fontFamilyTwo: $font-family-sans-serif; // body
+$fontFamilyOne: 'Oswald', sans-serif; // titles
+$fontFamilyTwo: 'Source Sans Pro', sans-serif; // body

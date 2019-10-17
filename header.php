@@ -19,7 +19,7 @@
     <header class="page-header">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center">
                     <div class="logo">
 	                    <?php get_default_logo_link([
                             'name'    => 'logo.jpg',
@@ -31,6 +31,7 @@
                             ])
                         ?>
                     </div>
+                    <?php bloginfo( 'description' ); ?>
                 </div>
                 <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
         <?php if (has_nav_menu('main-nav')) { ?>

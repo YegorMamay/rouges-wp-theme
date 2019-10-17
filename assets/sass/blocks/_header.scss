@@ -9,8 +9,9 @@
     &,
     &-link,
     &-img {
-        display: inline-block;
+        display: block;
         vertical-align: middle;
+        margin: 0 auto 5px auto;
     }
 }
 

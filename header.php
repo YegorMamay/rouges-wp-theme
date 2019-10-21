@@ -18,9 +18,9 @@
 <div class="wrapper js-container"><!--Do not delete!-->
     <header class="page-header">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center">
-                    <div class="logo">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                    <div class="logo hide-on-mobile">
 	                    <?php get_default_logo_link([
                             'name'    => 'logo.jpg',
                             'options' => [
@@ -31,7 +31,9 @@
                             ])
                         ?>
                     </div>
-                    <?php bloginfo( 'description' ); ?>
+                    <div class="descript">
+                        <?php bloginfo( 'description' ); ?>
+                    </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
         <?php if (has_nav_menu('main-nav')) { ?>
@@ -49,7 +51,7 @@
             </nav>
     <?php } ?>
                 </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 head-ph">
                     <?php echo do_shortcode('[bw-phone]');?>
                 </div>
             </div>

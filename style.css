@@ -10,6 +10,7 @@ License URI:
 Version: 4.8.6
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro:400,700&display=swap&subset=cyrillic,cyrillic-ext");
 html,
 body,
 div,
@@ -8487,7 +8488,7 @@ ol.commentlist .comment-body {
 h1, h2, h3, h4, h5, h6, h1.hero-title {
   color: #2d1b00;
   font-family: "Oswald", sans-serif;
-  line-height: 1.2;
+  line-height: 1.4;
   font-weight: 700; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1.hero-title a {
     color: #2d1b00; }
@@ -9099,22 +9100,35 @@ hr.style-two {
   color: #a31222;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.35); }
+  .page-header .descript {
+    text-align: center; }
 
 .logo, .logo-link, .logo-img {
   display: block;
   vertical-align: middle;
   margin: 0 auto 5px auto; }
+  @media (max-width: 544px) {
+    .logo, .logo-link, .logo-img {
+      margin: 0; } }
 
-.phone, .phone-item {
-  display: inline-block;
-  vertical-align: middle; }
-.phone-item {
-  margin: 0 5px; }
-.phone-number {
-  display: inline-block;
-  text-decoration: none; }
-  .phone-number:hover {
-    text-decoration: underline; }
+.phone {
+  font-family: 'Oswald', sans-serif; }
+  .phone, .phone-item {
+    display: inline-block;
+    vertical-align: middle; }
+  .phone-item {
+    margin: 0 5px; }
+  .phone-number {
+    display: inline-block;
+    text-decoration: none; }
+    .phone-number:hover {
+      text-decoration: underline; }
+
+.head-ph {
+  text-align: right; }
+  @media (max-width: 544px) {
+    .head-ph {
+      text-align: center; } }
 
 .social, .social-item {
   display: inline-block;
@@ -9547,6 +9561,13 @@ hr.style-two {
     text-decoration: underline; }
     .copyright a:hover {
       color: #f2f2f2; }
+  @media (max-width: 544px) {
+    .copyright {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      text-align: center; } }
 
 ::-moz-selection {
   text-shadow: none;
@@ -9587,7 +9608,7 @@ body {
   min-height: 100%; }
   @media (max-width: 544px) {
     .wrapper {
-      padding-top: 60px; } }
+      padding-top: 70px; } }
 
 b,
 strong {

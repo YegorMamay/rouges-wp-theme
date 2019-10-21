@@ -3,6 +3,10 @@
     background-color: $headerBgColor;
     color: $headerFontColor;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+    
+    .descript {
+        text-align: center;
+    }
 }
 
 .logo {
@@ -12,11 +16,17 @@
         display: block;
         vertical-align: middle;
         margin: 0 auto 5px auto;
+        
+        //xs 544
+        @media #{$mobile} {
+            margin: 0;
+        }
     }
 }
 
 .phone {
     @extend %reset-list;
+    font-family: 'Oswald', sans-serif;
 
     &,
     &-item {
@@ -35,6 +45,15 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+.head-ph {
+    text-align: right;
+    
+    //xs 544
+    @media #{$mobile} {
+        text-align: center;
     }
 }
 

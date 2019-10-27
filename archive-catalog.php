@@ -4,6 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
+			    <div class="sp-xs-4 sp-sm-4 sp-md-3 sp-lg-3 sp-xl-2"></div>
 				<h1 class="page-name">Каталог товаров</h1>
 			</div>
 		</div>

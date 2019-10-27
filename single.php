@@ -7,8 +7,7 @@
         <?php get_template_part('loops/content', 'single'); ?>
     </div>
     <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-       <div class="sp-xs-10"></div>
-        <?php get_sidebar(); ?>
+        <?php dynamic_sidebar('sidebar-widget-area2'); ?>
     </div>
 </div><!-- /.row -->
 </div><!-- /.container -->

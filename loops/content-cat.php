@@ -3,9 +3,9 @@
         <article id="post_<?php the_ID() ?>" class="row">
         <?php while (have_posts()): the_post(); ?>
             <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+                    <a href="<?php echo get_permalink(); ?>" class="cat-img"><?php the_post_thumbnail('medium'); ?></a>
                     <div class="sp-xs-1"></div>
-                    <h5 class="text-center"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h5>
+                    <div class="h6 text-center"><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></div>
             <div class="sp-xs-4"></div>
             </div>
         <?php endwhile; ?>

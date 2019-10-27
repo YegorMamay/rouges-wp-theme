@@ -8,7 +8,7 @@ Author URI: https://brainworks.pro
 Description:
 License:
 License URI:
-Version: 4.8.6
+Version: 4.8.7
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
  
@@ -304,31 +304,18 @@ header .sn-phone-cont__number {
     }
 }
 
-
-.page-catalog {
-    padding: 40px 0 80px;
-}
-
 .page-catalog .page-catalog__title {
     font-size: 30px;
+}
+
+.catalog__title {
+    text-align: center;
 }
 
 .page-catalog .page-catalog__content {
     margin-bottom: 30px;
 }
 
-.tax-sn_catalogs .btn.btn-secondary.btn-lg,
-.single-catalog .btn.btn-secondary.btn-lg,
-.page-catalog .page-catalog__link {
-    padding: 10px 30px;
-    text-align: center;
-    background: #d88201;
-    color: #ffffff;
-    border: none;
-}
-
-.tax-sn_catalogs .btn.btn-secondary.btn-lg:hover,
-.single-catalog .btn.btn-secondary.btn-lg:hover,
-.page-catalog .page-catalog__link:hover {
-    background: #d88201;
+.cat-img img, .wp-post-image {
+    box-shadow: $shadow;
 }

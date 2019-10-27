@@ -7,7 +7,7 @@ Author URI: https://brainworks.pro
 Description:
 License:
 License URI:
-Version: 4.8.6
+Version: 4.8.7
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro:400,700&display=swap&subset=cyrillic,cyrillic-ext");
@@ -8488,7 +8488,7 @@ ol.commentlist .comment-body {
 h1, h2, h3, h4, h5, h6, h1.hero-title {
   color: #2d1b00;
   font-family: "Oswald", sans-serif;
-  line-height: 1.3;
+  line-height: 1.4;
   font-weight: 700; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1.hero-title a {
     color: #2d1b00; }
@@ -8498,8 +8498,7 @@ h1, h2, h3, h4, h5, h6, h1.hero-title {
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #2d1b00;
   font-family: "Oswald", sans-serif;
-  line-height: 1.2;
-  font-weight: 700; }
+  line-height: 1.2; }
 
 h1.hero-title {
   font-weight: 600; }
@@ -8624,7 +8623,7 @@ h6 {
 
   .single-title {
     font-size: 36px;
-    font-size: calc(0.01825 * 100vw + 18.24px); }
+    font-size: calc(0.00625 * 100vw + 24px); }
 
   h1 {
     font-size: 38px;
@@ -8678,7 +8677,7 @@ h6 {
     font-size: 56px; }
 
   .single-title {
-    font-size: 42px; }
+    font-size: 32px; }
 
   h1 {
     font-size: 48px; }
@@ -9499,7 +9498,8 @@ hr.style-two {
       width: 2px;
       height: 10px; }
   .sidebar .widget_nav_menu .menu {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0px; }
     .sidebar .widget_nav_menu .menu .menu-item-has-children {
       position: relative; }
       .sidebar .widget_nav_menu .menu .menu-item-has-children .sub-menu {
@@ -9667,37 +9667,6 @@ img {
     .page-404 {
       background-image: none; } }
 
-
-/* Custom post type Catalogs */
-.catalogs {
-  padding: 80px 0;
-}
-
-.catalogs .sn-title-page {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.catalogs .catalog .catalog__title {
-  margin-bottom: 30px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.catalogs .catalog .catalog__title:hover {
-  text-decoration: underline;
-}
-
-.catalogs .catalog .catalog__img {
-  overflow: hidden;
-}
-
-.catalogs .catalog .catalog__img-prod {
-  display: block;
-  min-width: 100%;
-  height: auto;
-}
-
 /* Page prod */
 header .phone {
   position: absolute;
@@ -9706,30 +9675,26 @@ header .phone {
   padding: 20px 40px;
   margin: 0;
   text-align: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 999;
   background: #fff;
   min-width: 205px;
   font-size: 30px;
   line-height: 37px;
   -webkit-box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
-}
+  box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75); }
 
 header .sn-phone-cont {
   position: relative;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 header .sn-phone-cont:hover .phone {
-  left: 97.5px;
-}
+  left: 97.5px; }
 
 header .sn-phone-cont__number span,
 header .phone li:first-child a {
-  position: relative;
-}
+  position: relative; }
 
 header .sn-phone-cont__number span:before,
 header .phone li:first-child a:before {
@@ -9740,15 +9705,14 @@ header .phone li:first-child a:before {
   position: absolute;
   left: -30px;
   top: 50%;
-  transform: translateY(-50%);
-}
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 header .sn-phone-cont__number span:before {
-  background: url(assets/img/icon_phone_black.png);
-}
+  background: url(assets/img/icon_phone_black.png); }
+
 header .phone li:first-child a:before {
-  background: url(assets/img/icon_phone_red.png);
-}
+  background: url(assets/img/icon_phone_red.png); }
 
 header .sn-phone-cont__number span:after,
 header .phone li:first-child a:after {
@@ -9759,95 +9723,61 @@ header .phone li:first-child a:after {
   position: absolute;
   top: 50%;
   right: -21px;
-  transform: translateY(-50%);
-  background: #000;
-  
-}
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #000; }
 
 header .sn-phone-cont__number span:after {
-  background: url(assets/img/phone_arrow_top.png);
-}
+  background: url(assets/img/phone_arrow_top.png); }
 
 header .phone li:first-child a:after {
   right: -22px;
-  background: url(assets/img/phone_arrow_down_black.png);
-}
+  background: url(assets/img/phone_arrow_down_black.png); }
 
 header .sn-phone-cont__number {
   font-size: 18px;
   color: #000;
-  font-family: 'Oswald', sans-serif;
-}
+  font-family: 'Oswald', sans-serif; }
 
 @media (max-width: 1170px) {
-  header .sn-phone-cont:hover .phone{
-    left: 53px;
-  }
-}
-
+  header .sn-phone-cont:hover .phone {
+    left: 53px; } }
 @media (max-width: 992px) {
   header .sn-phone-cont:hover .phone {
     top: -29px;
-    left: -7px;
-  }
+    left: -7px; }
 
   header .sn-phone-cont .phone-number {
-    font-size: 18px;
-  }
+    font-size: 18px; }
 
   header .phone li:first-child a:before {
     top: 8px;
-    left: -31px;
-  }
-}
-
-
+    left: -31px; } }
 @media (max-width: 768px) {
   header .sn-phone-cont__number {
-    text-align: center;
-  }
+    text-align: center; }
 
   header .sn-phone-cont:hover .phone {
     top: -26px;
     left: 53.5%;
-    transform: translateX(-50%);
-    font-size: 18px;
-  }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 18px; }
 
   header .sn-phone-cont .phone-number {
-    font-size: 18px;
-  }
+    font-size: 18px; }
 
   header .phone li:first-child a:before {
-    top: 7px;
-  }
-}
-
-
-.page-catalog {
-  padding: 40px 0 80px;
-}
-
+    top: 7px; } }
 .page-catalog .page-catalog__title {
-  font-size: 30px;
-}
+  font-size: 30px; }
+
+.catalog__title {
+  text-align: center; }
 
 .page-catalog .page-catalog__content {
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
-.tax-sn_catalogs .btn.btn-secondary.btn-lg,
-.single-catalog .btn.btn-secondary.btn-lg,
-.page-catalog .page-catalog__link {
-  padding: 10px 30px;
-  text-align: center;
-  background: #d88201;
-  color: #ffffff;
-  border: none;
-}
-
-.tax-sn_catalogs .btn.btn-secondary.btn-lg:hover,
-.single-catalog .btn.btn-secondary.btn-lg:hover,
-.page-catalog .page-catalog__link:hover {
-  background: #d88201;
-}
+.cat-img img, .wp-post-image {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }

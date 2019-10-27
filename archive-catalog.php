@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="sn-title-page">Каталог товаров</h1>
+				<h1 class="page-name">Каталог товаров</h1>
 			</div>
 		</div>
 

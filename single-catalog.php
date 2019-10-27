@@ -16,9 +16,12 @@
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <div class="col-lg-4"><?php the_post_thumbnail(); ?></div>
-                    <div class="col-lg-8">
-                        <h1 class="page-catalog__title"><?php the_title() ?></h1>
+                    <div class="col-lg-5">
+                        <?php the_post_thumbnail(); ?>
+                        <div class="sp-xs-2"></div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h1 class="single-title"><?php the_title() ?></h1>
                         <hr>
                         <div class="page-catalog__content"><?php the_content() ?></div>
                         <button class="btn btn-secondary btn-lg one-click">Заказать</button>

@@ -54,7 +54,10 @@
                         <?php } ?>
                     </div>
                     <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 head-ph">
-                        <?php echo do_shortcode('[bw-phone]'); ?>
+                        <div class="sn-phone-cont">
+                            <div class="sn-phone-cont__number"><span><?php the_field('sn_phone_cont_number', 'option'); ?></span></div>
+                            <?php echo do_shortcode('[bw-phone]'); ?>
+                        </div>
                     </div>
                 </div>
             </div>

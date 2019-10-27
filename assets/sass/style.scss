@@ -177,3 +177,158 @@ img {
         background-image: none;
     }
 }
+
+/* Page prod */
+header .phone {
+    position: absolute;
+    top: -30px;
+    left: -9999px;
+    padding: 20px 40px;
+    margin: 0;
+    text-align: left;
+    box-sizing: border-box;
+    z-index: 999;
+    background: #fff;
+    min-width: 205px;
+    font-size: 30px;
+    line-height: 37px;
+    -webkit-box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
+}
+
+header .sn-phone-cont {
+    position: relative;
+    cursor: pointer;
+}
+
+header .sn-phone-cont:hover .phone {
+    left: 97.5px;
+}
+
+header .sn-phone-cont__number span,
+header .phone li:first-child a {
+    position: relative;
+}
+
+header .sn-phone-cont__number span:before,
+header .phone li:first-child a:before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .sn-phone-cont__number span:before {
+    background: url(assets/img/icon_phone_black.png);
+}
+
+header .phone li:first-child a:before {
+    background: url(assets/img/icon_phone_red.png);
+}
+
+header .sn-phone-cont__number span:after,
+header .phone li:first-child a:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    right: -21px;
+    transform: translateY(-50%);
+    background: #000;
+
+}
+
+header .sn-phone-cont__number span:after {
+    background: url(assets/img/phone_arrow_top.png);
+}
+
+header .phone li:first-child a:after {
+    right: -22px;
+    background: url(assets/img/phone_arrow_down_black.png);
+}
+
+header .sn-phone-cont__number {
+    font-size: 18px;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 1170px) {
+    header .sn-phone-cont:hover .phone {
+        left: 53px;
+    }
+}
+
+@media (max-width: 992px) {
+    header .sn-phone-cont:hover .phone {
+        top: -29px;
+        left: -7px;
+    }
+
+    header .sn-phone-cont .phone-number {
+        font-size: 18px;
+    }
+
+    header .phone li:first-child a:before {
+        top: 8px;
+        left: -31px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header .sn-phone-cont__number {
+        text-align: center;
+    }
+
+    header .sn-phone-cont:hover .phone {
+        top: -26px;
+        left: 53.5%;
+        transform: translateX(-50%);
+        font-size: 18px;
+    }
+
+    header .sn-phone-cont .phone-number {
+        font-size: 18px;
+    }
+
+    header .phone li:first-child a:before {
+        top: 7px;
+    }
+}
+
+
+.page-catalog {
+    padding: 40px 0 80px;
+}
+
+.page-catalog .page-catalog__title {
+    font-size: 30px;
+}
+
+.page-catalog .page-catalog__content {
+    margin-bottom: 30px;
+}
+
+.tax-sn_catalogs .btn.btn-secondary.btn-lg,
+.single-catalog .btn.btn-secondary.btn-lg,
+.page-catalog .page-catalog__link {
+    padding: 10px 30px;
+    text-align: center;
+    background: #d88201;
+    color: #ffffff;
+    border: none;
+}
+
+.tax-sn_catalogs .btn.btn-secondary.btn-lg:hover,
+.single-catalog .btn.btn-secondary.btn-lg:hover,
+.page-catalog .page-catalog__link:hover {
+    background: #d88201;
+}

@@ -10,7 +10,7 @@
             <?php get_template_part('loops/content', get_post_format()); ?>
         </div>
         <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-            <?php get_sidebar(); ?>
+            
         </div>
     </div><!-- /.row -->
 </div><!-- /.container -->

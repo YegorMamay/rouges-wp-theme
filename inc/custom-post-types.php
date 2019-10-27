@@ -78,3 +78,16 @@ function sn_register_post_types()
 }
 
 add_action('init', 'sn_register_post_types');
+
+if (function_exists('acf_add_options_page')) {
+
+    // Меню в панели wp
+    acf_add_options_page(array(
+        'page_title'     => 'Настройки',
+        'menu_title'     => 'Глобальные настройки',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'     => 'edit_posts',
+        'redirect'     => false
+    ));
+    // end Меню в панели wp
+}

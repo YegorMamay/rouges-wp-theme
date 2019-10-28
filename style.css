@@ -9570,6 +9570,9 @@ hr.style-two {
               flex-flow: column;
       text-align: center; } }
 
+.shop-logos {
+  background-color: #F9F9F9; }
+
 ::-moz-selection {
   text-shadow: none;
   color: #fff;

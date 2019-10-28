@@ -1,5 +1,11 @@
+<div class="sp-xs-3"></div>
+<hr>
 <div class="sp-xs-2"></div>
-  
+<h5 class="text-center">Покупайте нашу продукцию в магазинах</h5>
+<div class="sp-xs-5"></div>
+<?php echo do_shortcode('[show-logos]'); ?>
+<div class="sp-xs-5"></div>
+    
    <footer class="footer js-footer">
     <?php if (is_active_sidebar('footer-widget-area')) : ?>
         <div class="pre-footer">

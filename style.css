@@ -9534,7 +9534,8 @@ hr.style-two {
 .widget-item {
   margin-bottom: 20px; }
 .widget-title {
-  margin-bottom: 10px; }
+  margin-bottom: 20px;
+  text-align: center; }
 
 .footer {
   position: absolute;
@@ -9545,7 +9546,7 @@ hr.style-two {
 
 .pre-footer {
   padding: 20px 0;
-  background-color: #603a00; }
+  background-color: #ebebeb; }
 
 .copyright {
   padding: 14px 0;

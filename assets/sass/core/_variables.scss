@@ -45,7 +45,7 @@ $menuMobileLinkFontSize: 16px;
 $menuMobileSubMenuLinkFontSize: 14px;
 $menuMobileTextColor: #fff;
 $menuMobileSubMenuTextColor: $menuMobileTextColor;
-$menuMobileSubMenuBGOnHover: $themeColorOne;
+$menuMobileSubMenuBGOnHover: lighten($themeColorTwo, 10%);
 $menuMobileSubMenuTextColorOnHover: #fff;
 
 $hamburger-offset: 8px;

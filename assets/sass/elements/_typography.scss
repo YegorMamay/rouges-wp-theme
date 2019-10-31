@@ -54,6 +54,7 @@ span {
 header .second-menu .menu-container li a {
     font-size: $menu_size;
     font-family: "Oswald", sans-serif;
+    line-height: 30px;
 }
 
 @media #{$mobile} {

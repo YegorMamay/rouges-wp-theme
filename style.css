@@ -11113,6 +11113,12 @@ hr.style-two {
   text-align: center;
 }
 
+@media (max-width: 544px) {
+  .page-header {
+    display: none;
+  }
+}
+
 .logo, .logo-link, .logo-img {
   display: block;
   vertical-align: middle;

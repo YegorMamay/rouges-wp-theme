@@ -7,6 +7,11 @@
     .descript {
         text-align: center;
     }
+
+    //xs 544
+    @media #{$mobile} {
+        display: none;
+    }
 }
 
 .logo {

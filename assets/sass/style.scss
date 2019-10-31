@@ -8,7 +8,7 @@ Author URI: https://brainworks.pro
 Description:
 License:
 License URI:
-Version: 4.8.8
+Version: 4.8.9
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
  
@@ -179,143 +179,101 @@ img {
 }
 
 /* Page prod */
-header .phone {
+.page-header {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+header .second-menu .menu-container {
     position: absolute;
-    top: -30px;
-    left: -9999px;
-    padding: 20px 40px;
-    margin: 0;
-    text-align: left;
-    box-sizing: border-box;
+    top: 50%;
+    right: 0;
+    transform: translateY(-45%);
+    padding: 20px 32px 20px 20px;
     z-index: 999;
+    border-radius: 2px;
+}
+
+header .second-menu .menu-container,
+header .second-menu .sub-menu {
+    margin: 0;
+    list-style: none;
+}
+
+header .second-menu .menu-container:hover {
+    top: -28px;
+    transform: inherit;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
     background: #fff;
-    min-width: 205px;
-    font-size: 30px;
-    line-height: 37px;
-    -webkit-box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 40px -22px rgba(0, 0, 0, 0.75);
 }
 
-header .sn-phone-cont {
-    position: relative;
-    cursor: pointer;
+header .second-menu .menu-container:hover .sub-menu {
+    display: block;
 }
 
-header .sn-phone-cont:hover .phone {
-    left: 97.5px;
+header .second-menu .menu-container:hover .fa-phone:before {
+    color: #a31222;
 }
 
-header .sn-phone-cont__number span,
-header .phone li:first-child a {
+header .second-menu .menu-container li a:first-child {
     position: relative;
 }
 
-header .sn-phone-cont__number span:before,
-header .phone li:first-child a:before {
-    content: "";
+header .second-menu .menu-container li a:first-child:after {
+    content: '\f107';
     display: block;
-    width: 22px;
-    height: 21px;
     position: absolute;
-    left: -30px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-header .sn-phone-cont__number span:before {
-    background: url(assets/img/icon_phone_black.png);
-}
-
-header .phone li:first-child a:before {
-    background: url(assets/img/icon_phone_red.png);
-}
-
-header .sn-phone-cont__number span:after,
-header .phone li:first-child a:after {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 6px;
-    position: absolute;
-    top: 50%;
-    right: -21px;
-    transform: translateY(-50%);
-    background: #000;
-
-}
-
-header .sn-phone-cont__number span:after {
-    background: url(assets/img/phone_arrow_top.png);
-}
-
-header .phone li:first-child a:after {
+    top: 14px;
     right: -22px;
-    background: url(assets/img/phone_arrow_down_black.png);
+    transform: translateY(-50%);
+    font-size: 26px;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300;
 }
 
-header .sn-phone-cont__number {
-    font-size: 18px;
-    color: #000;
-    font-family: 'Oswald', sans-serif;
+header .second-menu .menu-container:hover li a:first-child:after {
+    top: -1px;
+    transform: rotate(180deg);
+    color: #a31222;
 }
 
-@media (max-width: 1170px) {
-    header .sn-phone-cont:hover .phone {
-        left: 53px;
-    }
+header .second-menu .sub-menu {
+    display: none;
+}
+
+header .second-menu .sub-menu li a:first-child:after {
+    content: "";
 }
 
 @media (max-width: 992px) {
-    header .sn-phone-cont:hover .phone {
-        top: -29px;
-        left: -7px;
-    }
-
-    header .sn-phone-cont .phone-number {
-        font-size: 18px;
-    }
-
-    header .phone li:first-child a:before {
-        top: 8px;
-        left: -31px;
+    header .second-menu .menu-container li a:first-child:after {
+        top: 10px;
     }
 }
 
-
 @media (max-width: 768px) {
-    header .sn-phone-cont__number {
+    header .second-menu {
         text-align: center;
     }
 
-    header .sn-phone-cont:hover .phone {
+    header .second-menu .menu-container {
+        margin: 15px 0 -20px;
+        position: relative;
+        right: inherit;
+        display: inline-block;
+    }
+
+    header .second-menu .menu-container:hover {
         top: -26px;
-        left: 53.5%;
-        transform: translateX(-50%);
-        font-size: 18px;
-    }
-
-    header .sn-phone-cont .phone-number {
-        font-size: 18px;
-    }
-
-    header .phone li:first-child a:before {
-        top: 7px;
+        box-shadow: none;
+        background: none;
     }
 }
 
-.page-catalog .page-catalog__title {
-    font-size: 30px;
-}
-
-.catalog__title {
-    text-align: center;
-}
-
-.page-catalog .page-catalog__content {
-    margin-bottom: 30px;
-}
-
-.cat-img img, .wp-post-image {
-    box-shadow: $shadow;
+@media (max-width: 560px) {
+    header .second-menu .menu-container {
+        margin: 50px 0 -20px;
+    }
 }

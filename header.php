@@ -37,7 +37,7 @@
                             <?php bloginfo('description'); ?>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <div class="col-12 col-sm-12 col-md-7 col-xl-8">
                         <?php if (has_nav_menu('main-nav')) { ?>
                             <nav class="nav js-menu">
                                 <button type="button" tabindex="0" class="menu-item-close menu-close js-menu-close"></button>
@@ -53,11 +53,18 @@
                             </nav>
                         <?php } ?>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 head-ph">
-                        <div class="sn-phone-cont">
-                            <div class="sn-phone-cont__number"><span><?php the_field('sn_phone_cont_number', 'option'); ?></span></div>
-                            <?php echo do_shortcode('[bw-phone]'); ?>
-                        </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-xl-2 head-ph">
+<nav class="second-menu">
+    <?php wp_nav_menu(array(
+        'theme_location' => 'second-menu',
+        'container' => false,
+        'menu_class' => 'menu-container',
+        'menu_id' => '',
+        'fallback_cb' => 'wp_page_menu',
+        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth' => 2
+    )); ?>
+</nav>
                     </div>
                 </div>
             </div>

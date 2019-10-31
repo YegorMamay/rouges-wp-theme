@@ -51,6 +51,11 @@ span {
     font-weight: 400;
 }
 
+header .second-menu .menu-container li a {
+    font-size: $menu_size;
+    font-family: "Oswald", sans-serif;
+}
+
 @media #{$mobile} {
     p {
         font-size: $p_mobile * $p_size;
@@ -84,6 +89,10 @@ span {
     li a {
         font-size: $menu_tablet * $menu_size;
         line-height: $menu_tablet * $menu_line-height;
+    }
+
+    header .second-menu .menu-container li a {
+        font-size: $menu_size - 2px;
     }
 }
 

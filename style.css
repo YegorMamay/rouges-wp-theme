@@ -7,7 +7,7 @@ Author URI: https://brainworks.pro
 Description:
 License:
 License URI:
-Version: 4.8.9
+Version: 4.8.8
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro:400,700&display=swap&subset=cyrillic,cyrillic-ext");
@@ -8511,7 +8511,8 @@ span {
 
 header .second-menu .menu-container li a {
   font-size: 18px;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  line-height: 30px; }
 
 @media (max-width: 544px) {
   p {
@@ -9472,8 +9473,8 @@ hr.style-two {
         color: #fff;
         font-size: 14px; } }
 .sidebar .widget_nav_menu {
-  -webkit-box-shadow: 0 0 46px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 0 46px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 15px; }
   .sidebar .widget_nav_menu .sub-current-menu-item {
     text-decoration: none; }
@@ -9616,7 +9617,8 @@ body {
 .wrapper {
   position: relative;
   overflow-x: hidden;
-  min-height: 100%; }
+  min-height: 100%;
+  padding-top: 115px; }
   @media (max-width: 544px) {
     .wrapper {
       padding-top: 70px; } }
@@ -9684,7 +9686,7 @@ header .second-menu .menu-container {
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  transform: translateY(-45%);
   padding: 20px 32px 20px 20px;
   border-radius: 2px; }
 
@@ -9696,9 +9698,9 @@ header .second-menu .sub-menu {
 header .second-menu .menu-container:hover {
   top: -31px;
   -webkit-transform: inherit;
-          transform: inherit;
+  transform: inherit;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
   background: #fff; }
 
 header .second-menu .menu-container:hover .sub-menu {
@@ -9708,8 +9710,7 @@ header .second-menu .menu-container:hover .fa-phone:before {
   color: #a31222; }
 
 header .second-menu .menu-container li a {
-  line-height: 30px;
-}
+  line-height: 30px; }
 
 header .second-menu .menu-container li a:first-child {
   position: relative; }
@@ -9721,7 +9722,7 @@ header .second-menu .menu-container li a:first-child:after {
   top: 14px;
   right: -22px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 26px;
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300; }
@@ -9729,12 +9730,11 @@ header .second-menu .menu-container li a:first-child:after {
 header .second-menu .menu-container:hover li a:first-child:after {
   top: -1px;
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   color: #a31222; }
 
 header .second-menu .sub-menu {
-  display: none; 
-}
+  display: none; }
 
 header .second-menu .sub-menu li a:first-child:after {
   content: ""; }
@@ -9744,32 +9744,24 @@ header .second-menu .sub-menu li a:first-child:after {
     position: fixed;
     top: 0;
     z-index: 99;
-    width: 100%;
-  }
-}
-
+    width: 100%; } }
 @media (max-width: 1024px) {
   header .second-menu .menu-container {
     position: inherit;
     padding: 0;
-    transform: inherit;
-  }
+    -webkit-transform: inherit;
+            transform: inherit; }
 
   header .second-menu .menu-container:hover {
     top: inherit;
-    box-shadow: none;
-  }
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
   header .second-menu .menu-container li a:first-child:after {
-    display: none;
-  }
-  
+    display: none; }
+
   header .second-menu .sub-menu {
-    display: block;
-  }
-}
-
-
+    display: block; } }
 @media (max-width: 768px) {
   header .second-menu {
     text-align: center; }
@@ -9782,5 +9774,10 @@ header .second-menu .sub-menu li a:first-child:after {
 
   header .second-menu .menu-container:hover {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background: none; } }
+.cat-img img {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto; }

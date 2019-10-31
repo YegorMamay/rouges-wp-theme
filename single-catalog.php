@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <section class="page-breadcrumbs">
     <div class="container">
         <div class="row">
@@ -24,7 +23,9 @@
                         <h1 class="single-title"><?php the_title() ?></h1>
                         <hr>
                         <div class="page-catalog__content"><?php the_content() ?></div>
-                        <button class="btn btn-secondary btn-lg one-click">Заказать</button>
+                        <div class="sp-xs-3"></div>
+                        <button class="btn btn-secondary one-click">Заказать</button>
+                        <div class="sp-xs-3"></div>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>

@@ -27,15 +27,15 @@
                                 'name'    => 'logo.jpg',
                                 'options' => [
                                     'class'  => 'logo-img',
-                                    'width'  => 70,
-                                    'height' => 70,
+                                    'width'  => 110,
+                                    'height' => 110,
                                 ],
                             ])
                             ?>
                         </div>
-                        <div class="descript">
+                        <!--<div class="descript">
                             <?php bloginfo('description'); ?>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-12 col-sm-12 col-md-7 col-xl-8">
                         <?php if (has_nav_menu('main-nav')) { ?>
